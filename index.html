@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <link rel="shortcut icon" href="images/from_icon.png">
+  <link rel="stylesheet" href="formulier.css">
+  <meta name="theme-color" content="#fffff">
+  <meta name="author" content="Flint Naafs">
+  <meta charset="utf-8">
+  <title>Formulier Flint Naafs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>Formulier Van Flint Naafs MG1A</h1>
+  <main>
+    <form id="formulier.contact" class="formulier.contact" action="http://bla.hosts.ma-cloud.nl/pop.php" method="get" name="myformulier" autocomplete="on" enctype="text/plain">
+      <div class="form-item-row">
+        <div class="form-item">
+          <label class="label" for="Voornaam"> Uw Voornaam
+          <input  id="Voornaam" class="Voornaam" type="text" name="Voornaam" placeholder="Voornaam hier" value="" required maxlength="40"></label>
+        </div>
+      <div class="form-item">
+        <label class="label" for="Achternaam">Uw Achternaam
+          <input  id="Achternaam" class="Achternaam" type="text" name="Achternaam" placeholder="Achternaam hier" value="" required maxlength="40"></label>
+      </div>
+      </div>
+      <div class="form-item-row">
+        <div class="address-main">
+          <div class="form-item">
+            <label class="label" for="Adres">Uw Adres
+            <input id="Adres" class="Adres" type="text" name="Adres" placeholder="Straatnaam hier" value="" required maxlength="60"></label>
+          </div>
+        <div class="form-item">
+          <label class="label" for="postcode">Uw Postcode
+              <input id="postcode" class=" Postcode" type="text" name="Postcode" placeholder="Postcode hier" value="" required maxlength="30"></label>
+        </div>
+      <div class="form-item">
+        <label class="Land" for="Land">Uw Land
+              <input id="Land" class="Adres" type="text" name="Land" placeholder="Land hier" value="" required maxlength="55"></label>
+      </div>
+      <div class="form-item">
+        <label class="state" for="Provincie">Uw Provincie
+              <input id="Provincie" class="Adres" type="text" name="Provincie" placeholder="Provincie hier" value="" required maxlength="50"></label>
+      </div>
+      </div>
+      </div>
+
+      <div class="form-item" id="gender-radio">
+        <label class="label" id="gender-label" >geslacht</label>
+<div class=" radios-wrap">
+          <p>
+     <input type="radio" id="Man" name="Geslacht" value="man">
+     <label for="Man">Mannelijk</label>
+        </p>
+        <p>
+          <input type="radio" id="Vrouw" name="Geslacht" value="vrouw">
+          <label for="Vrouw">Vrouwlijk</label>
+        </p>
+        <p>
+          <input type="radio" id="nietmelden" name="Geslacht" value="nietmelden">
+          <label for="nietmelden">Verkies niet te melden</label>
+        </p>
+
+      </div>
+      </div>
+
+      <div class="form-item-row">
+        <div class="form-item">
+          <label class="label" for="telefoon">telefoon
+            <input id="telefoon" type="tel" class="phone-input" name="telephone" value="" maxlength="10" minlength="9" required placeholder="Telefoon nummer hier" ></label>
+        </div>
+        <div class="form-item">
+          <label class="label" for="favorite">Welk opleidings niveau heeft u gedaan
+          <select id="favorite" name="opleiding" required>
+        <option disabled value="" selected="selected">maak hier u keuze</option>
+        <option value="Niks">Geen Opleiding gedaan</option>
+        <option value="BasisS">Basisschool afgemaakt</option>
+        <option value="Middelbaar">Middelbare School afgemaakt</option>
+        <option value="Mbo">Middelbaar beroepsonderwijs</option>
+        <option value="Hbo">Hoger beroepsonderwijs</option>
+        <option value="Uni">Univesitair niveau</option>
+
+      </select>
+      </label>
+          </div>
+          <div class="form-item-row">
+      <div class="form-item" id="from-item-textarea">
+        <label id="textarea" for="about">Vertel mij iets korts over u mezelf binnen 200 woorden
+          <textarea name="about" class="Adres " id="about" rows="8" cols="80" placeholder="Vertel hier wat over u zelf" maxlength="400"></textarea>
+        </label>
+      </div>
+    </div>
+      <div class="checkboxes">
+        <input type="checkbox" id="checkboxes">
+      </div>
+      </div>
+      <div class="submit-button">
+        <input class="submit-button-button" type="submit" value="Submit" />
+      </div>
+    </form>
+  </main>
+  <footer>
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+      <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+      <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+    </a>
+    <p class="author">GEMAAKT DOOR FLINT NAAFS</p>
+  </footer>
+</body>
+
+</html>

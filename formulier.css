@@ -1,0 +1,120 @@
+input{
+  width: 50%;
+  background-attachment: fixed;
+  height: 10vh;
+  background-color: rgb(180, 36, 36);
+  font-size: 20px;
+}
+label{
+width: 100%;
+height: 10vh;
+color: rgb(4, 67, 104);
+font-size: 20px;
+}
+.radios-wrap {
+  float: left;
+  width: 100%;
+  display: block;
+  float: left;
+  margin-top: 16px;
+}
+input radio{
+  width: 30px;
+}
+#gender-radio {
+  height: 81px;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(0, 0, 0);
+  width: 40%;
+  opacity: 1;
+  font-size: 20px;
+}
+body{
+  background-color: rgb(82, 82, 82);
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #000;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  background: #000;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+select {
+
+  width: 230px;
+  height: 40px;
+  width: 100%;
+  padding: 10px 11px 11px 37px;
+  background-color: rgb(180, 36, 36);
+}
+textarea {
+  height: 44px;
+  resize: none;
+  height: 20vh;
+  width: 100%;
+    background-color: rgb(180, 36, 36);
+    font-size: 20px;
+
+}
+footer{
+  height: 100px;
+  background-color: rgb(59, 59, 59);
+  padding: 50px;
+}
+.author{
+  float: right;
+  color: #fff;
+
+}
+body{
+  margin: 0;
+}
